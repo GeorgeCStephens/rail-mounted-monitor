@@ -1,0 +1,215 @@
+# Vertical Monitor Rail, Revision 2
+
+A rail-guided riser that lets a 27" monitor slide up for use and down out of the way. This revision keeps the original concept (MGN12 linear rail plus manual clamp) and fixes the safety, mounting and fit problems found in review.
+
+> **Status:** Not yet tested. Prices and part specifications are estimates. Check every dimension and rating against the datasheet of the parts you actually buy before cutting or drilling anything.
+
+---
+
+## 1. Design basis
+
+| Parameter | Value | Notes |
+| :--- | :--- | :--- |
+| Max monitor mass | **6 kg** (59 N) | Weigh your monitor with the stand removed. Above 6 kg, or for ultrawide or curved panels, re-do the checks. |
+| Centre of gravity offset from rail face | ~100 mm | Rail face to VESA plate, plus about half the monitor depth. |
+| Pitching moment | ~6 N·m | 59 N x 0.1 m. MGN12H blocks are rated for tens of N·m each. Confirm on the seller's datasheet. |
+| Anchor design load | **3 x static load**, plus a 100 N sideways or leaning load | Covers bumps, leaning on the monitor and pulling a cable. |
+| Required travel | ≥ 420 mm | About the height of a 27" panel with bezel, so it can drop below the desk line. |
+| Required clamp holding force | **≥ 3 x monitor weight** (≥ 180 N at 6 kg) | Take this from the listing. If none is stated, treat the clamp as unproven and rely on the pin lock. |
+
+**Locking philosophy**
+
+1. **Primary lock:** a spring-loaded indexing pin that engages a hole at the "up" and "down" positions. This is a positive mechanical lock and does not rely on friction.
+2. **Secondary lock:** the manual rail clamp, which stops rattle and fine-height drift.
+3. **Last resort:** end stops and a bottom bumper, so a failure ends in a soft stop rather than a crash.
+
+---
+
+## 2. Bill of materials (estimates, not verified against current listings)
+
+| # | Item | Spec | Est. cost |
+| :-- | :--- | :--- | :--- |
+| 1 | MGN12 linear rail | **600 mm**, hardened steel, 25 mm hole pitch | £18-25 |
+| 2 | MGN12H blocks | **x2** (flanged or standard, check datasheet), same brand as rail | £12-18 |
+| 3 | Manual rail clamp for MGN12 | Look for a stated holding force; check it fits beside the blocks | £12-15 |
+| 4 | Adapter plate | 3-4 mm aluminium, about 200 x 150 mm. Drilled for the 20 x 20 mm block pattern (x2) and your monitor's VESA pattern | £8-14 |
+| 5 | Indexing plunger | M8 spring-loaded, pull-knob, with locknut | £5-9 |
+| 6 | Pin-hole strip | 25 x 3 mm aluminium flat bar, about 500 mm | £3-5 |
+| 7 | End stops | 2 x aluminium or 3D-printed blocks, plus M4/M5 bolts | £3-6 |
+| 8 | Bumpers | Rubber or felt pads, bottom stop and top stop | £2-3 |
+| 9 | Spine | **18 mm birch plywood**, about 650 x 120 mm. Not MDF. | £8-15 |
+| 10 | Rail fixings | M3 x 16 socket-head cap screws (x about 24) plus M3 tee-nuts or threaded inserts | £6-9 |
+| 11 | Plate fixings | M3 countersunk or low-head screws (length per §4.4), thread-lock, M4 or M5 VESA screws and spacers if needed | £4-6 |
+| 12 | Desk or wall anchor | See §3. Coach bolts or M8 bolts, penny washers, backing plate, or wall plugs and screws | £10-25 |
+| 13 | Cable management | Flat cable clips, spiral wrap, 500 mm+ of cable slack | £5-8 |
+| 14 | Safety strap (recommended) | Webbing or steel cable rated ≥ 100 kg, from the adapter plate to the spine top | £4-8 |
+| 15 | *Optional:* counterbalance | Constant-force spring or gas strut matched to monitor weight | £15-35 |
+| | **Estimated total** | | **~£115-200** (£100-165 without the counterbalance) |
+
+The original £38-50 budget did not include the second block, adapter plate, pin lock, stops, safety strap or a proper anchor, which is where most of the increase comes from.
+
+---
+
+## 3. Anchoring (do this first)
+
+The anchor is the highest structural risk. A G-clamp cannot hold a flat board to a desk's rear edge the way the original drawing implied. Pick **one** of the options below.
+
+### Option A: Wall mount (preferred if the desk sits against a solid wall)
+
+- Fix the plywood spine to the wall with **at least 4 screws** into studs, or masonry with suitable plugs (M6 or larger).
+- Locate studs or confirm masonry before drilling, and check for pipes and cables.
+- Leave 20-30 mm of space behind the spine only if needed for cable routing.
+
+### Option B: Through-bolted to the desk
+
+- Use only if the desk has a solid top or rear rail at least 25 mm thick (solid wood, thick ply or steel frame). **Do not use thin chipboard or hollow-core desks.**
+- Bolt the spine to the rear edge or rear rail with **at least 3 x M8 bolts**, with penny washers and a **steel or ply backing plate** on the far side.
+- If bolting to the desktop's underside, use an L-bracket or ply foot spread over a wide area, not a single point.
+
+### Anchor acceptance test (before mounting the monitor)
+
+1. Hang **18 kg** (3 x design mass) from where the monitor's centre of gravity will be, for 10 minutes.
+2. Check for flex, creaking, crushing at the backing plate, or movement against the desk or wall.
+3. Pull sideways with about 10 kg of force. Nothing should shift.
+
+If it fails, strengthen the anchor and re-test.
+
+---
+
+## 4. Structural layout
+
+```
+ [ WALL or DESK REAR ]
+         |   (anchor: §3, 3 x load)
+ [ 18 mm BIRCH PLY SPINE ]  -- flat, straight, not warped
+         |   (M3 bolts into tee-nuts, every hole)
+ [ MGN12 RAIL, 600 mm ]  <-- top end stop + top bumper
+         |
+ [ BLOCK 1 ] + [ CLAMP ]   [ BLOCK 2 ]   (about 100 mm apart)
+         |
+ [ ALUMINIUM ADAPTER PLATE ]  -- carries indexing pin
+         |                       (VESA pattern drilled in)
+ [ MONITOR ]
+         |
+ [ BOTTOM BUMPER + BOTTOM END STOP ]
+
+ Beside the rail: [ PIN-HOLE STRIP ]  holes at "UP" and "DOWN"
+```
+
+### 4.1 Spine
+
+- 18 mm birch plywood, about 650 x 120 mm. Check it is flat along its length with a straight edge, and reject warped boards. A twisted spine will bind the carriage.
+- Pre-drill and fit M3 tee-nuts or threaded inserts on the rear face at every rail hole position.
+
+### 4.2 Rail
+
+- Use the rail itself as a drilling template: centre it on the spine, mark every hole, drill 3.2-3.5 mm holes, then fit tee-nuts or inserts.
+- Fix with **M3 x 16 socket-head cap screws in every hole**. Do not use tapered-head wood screws, because the counterbores won't seat them and a proud head will catch the block.
+- Tighten from one end to the other and keep the rail straight. Check the block runs smoothly through the full length. If it binds, find the high spot before loading it.
+- Remove the shipping oil film with isopropyl alcohol, then apply a light machine oil. Keep oil away from the clamp contact surface.
+
+### 4.3 End stops and bumpers
+
+- Fit a stop at **both** rail ends, bolted to the spine just beyond the rail end, rated to take the monitor weight, not just stop the block. This prevents the block running off the rail and spilling the recirculating balls.
+- Add rubber or felt bumpers to the top stop and bottom stop.
+- The bottom bumper should be positioned so the monitor cannot hit the desk or any equipment below it.
+
+### 4.4 Blocks and adapter plate
+
+- Use **two blocks** about 100 mm apart (adjust for clamp body width) on the same rail, joined by the adapter plate. Two blocks resist the pitching load and reduce wobble when typing. A single block cantilevering the monitor will shake.
+- MGN12H blocks use an **M3, 20 x 20 mm** hole pattern. A standard VESA bracket will not fit them.
+- Drill the adapter plate (3-4 mm aluminium) for both blocks and for your monitor's VESA pattern (75 x 75 or 100 x 100, M4 usually).
+- **Screw length limit:** plate thickness + block thread depth only. Check the datasheet; it is typically around 3.5 mm. A screw that bottoms out in the block will jam the carriage. Use thread-lock.
+- If the monitor's VESA holes are recessed, add spacers and use longer VESA screws.
+
+### 4.5 Pin lock (primary lock)
+
+- Fit the M8 indexing plunger through the edge of the adapter plate, so its pin points toward the spine, beside the rail.
+- Fix the 25 x 3 mm hole strip to the spine beside the rail and drill 8 mm holes at:
+  - **"UP"** (monitor at the eye line), and
+  - **"DOWN"** (monitor stowed).
+- Position the holes so the pin engages when the plate is at the required height. Check before final drilling.
+- To move the monitor: support it with one hand, pull the knob with the other, slide, and release into the next hole. Never release the pin without a hand on the monitor.
+
+### 4.6 Clamp (secondary lock)
+
+- Fit the clamp on the rail between or adjacent to the blocks and connect it to the adapter plate so it moves with the carriage.
+- Keep oil off the clamp contact surface. Wipe the rail section it grips.
+- Use it to stop rattle and drift. Do not rely on it alone to hold the monitor.
+
+### 4.7 Safety strap
+
+- Run a strap or cable from the adapter plate to a separate fixing at the top of the spine, rated ≥ 100 kg, with a little slack so it doesn't interfere with travel. If anything fails, the monitor hangs rather than falls.
+
+### 4.8 Optional counterbalance
+
+- A constant-force spring or gas strut sized to the monitor weight makes lifting one-handed and reduces drop energy.
+- It must be matched to the monitor mass. Too strong and the monitor rises when unlocked; too weak and it drops.
+- **Hazard:** if the monitor is removed while the spring is attached, the spring can retract violently. Always disconnect or restrain the spring before removing the monitor.
+- Note that "no springs" is a design choice, not a safety advantage. A properly sized counterbalance is arguably safer than a heavy monitor held only by a pin.
+
+---
+
+## 5. Cables
+
+- Leave **at least 500 mm of slack** in power and video cables, secured at both ends with strain relief, so they don't pull on connectors during travel.
+- Use right-angle connectors if clearance is tight.
+- Clip cables flat to the spine and keep them clear of the block and rail. Route the loop away from the pinch points.
+- Consider a flexible cable chain for neat, durable routing.
+
+---
+
+## 6. Assembly sequence
+
+1. **Weigh the monitor** and confirm it is ≤ 6 kg. Check its VESA pattern and whether the holes are recessed.
+2. **Prepare the spine:** check flatness, mark and drill, fit tee-nuts or inserts.
+3. **Anchor the spine** (§3) and run the acceptance test.
+4. **Fit the rail** with all fixings. Check the block runs freely over the whole length.
+5. **Fit the end stops, bumpers and safety strap anchor** before putting any block on the rail permanently.
+6. **Drill the adapter plate**, then fit the blocks, clamp and indexing plunger.
+7. **Fit the pin-hole strip** and drill the "UP" and "DOWN" holes.
+8. **Test with a dummy load** (about 6 kg of weights bolted to the VESA plate) before using the real monitor.
+9. **Mount the monitor** onto the adapter plate, route cables with slack, and fit the strap.
+10. **Final check:** test the full range of travel, confirm the pin engages at both heights and the clamp holds.
+
+---
+
+## 7. Test and inspection schedule
+
+| When | Check |
+| :--- | :--- |
+| Before first use | Anchor test at 3 x load (§3). Dummy load run: 20 full up-and-down cycles with a 6 kg weight. |
+| First week | Re-torque all rail, plate and anchor fixings. Check for rail movement or elongation of holes. |
+| Monthly | Wipe the rail, check for dirt or debris, re-oil lightly, check end stop and bumper tightness, check the pin engages fully and the spring still has force. |
+| After any bump or fall | Check the rail for straightness, the anchor for movement, and the adapter plate for bending before further use. |
+
+**Stop using it if:** the carriage sticks or grinds, the pin does not engage fully, any fixing loosens repeatedly, the spine cracks or delaminates, or the anchor shows movement.
+
+---
+
+## 8. Safety notes
+
+- **Pinch and crush hazard:** fingers can be trapped between the plate and the spine, and between the monitor and the desk. Keep hands on the monitor's edges, not near the rail.
+- **Never rely on friction alone** to hold the monitor. The blocks run almost without friction when unlocked.
+- **Do not exceed** the 6 kg design mass without re-checking the clamp, anchor and rail ratings.
+- **Keep children and pets** away from a monitor that is raised without the pin engaged.
+- Wear eye protection when drilling, and check for hidden services before drilling into walls.
+- The original claim that the design is "impossible to jam or snap" has been removed. Rails can bind from debris or misalignment, and clamps can slip, which is why the pin, stops and strap are included.
+
+---
+
+## 9. Changes from Revision 1
+
+| Issue in v1 | Fix in v2 |
+| :--- | :--- |
+| Clamp friction was the only lock | Pin lock added as the primary lock; clamp is secondary; strap as last resort |
+| No end stops | Stops at both rail ends, plus bumpers |
+| G-clamp desk mounting didn't work as drawn | Defined wall or through-bolt options with a backing plate and acceptance test |
+| Off-the-shelf VESA plate won't fit the 20 x 20 mm pattern | Custom adapter plate with screw-length limit |
+| Wood screws on the counterbored rail | M3 socket-head screws into tee-nuts or inserts in every hole |
+| MDF spine | 18 mm birch plywood, flatness-checked |
+| 500 mm rail left marginal travel | 600 mm rail |
+| Single block wobble | Two blocks on one adapter plate |
+| No cable plan | 500 mm slack with strain relief |
+| "Impossible to jam or snap" | Removed |
+| No testing | Test and inspection schedule added |
