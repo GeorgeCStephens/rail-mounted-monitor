@@ -1,0 +1,97 @@
+# Rev 1
+
+# rail-mounted-monitor
+Construction plans for a vertically rail mounted monitor
+Plans drafted with AI
+
+
+
+# DIY Vertical Monitor Rail (Friction-Locking System)
+
+This design uses industrial steel linear rails (like those found in CNC machines) to provide a smooth vertical track behind your desk. It completely eliminates springs, pulleys, and gas struts, making it impossible to jam or snap. To use it, you simply loosen a quick-release knob, slide the monitor up or down with your hands, and lock it back into place.
+
+---
+
+## 🛠️ Item List & Estimated Costs
+
+| Item | Purpose | Estimated Cost | Where to Buy |
+| :--- | :--- | :--- | :--- |
+| **MGN12 Linear Rail Guide** (500mm or 600mm Length) | A solid steel profile track that stays 100% rigid vertically. | £15.00 – £22.00 | eBay UK, AliExpress, or Amazon |
+| **MGN12H Slide Block + Manual Locking Clamp** | The carriage block that travels along the rail, featuring a built-in thumb screw lock. | £11.99 | Amazon (Search: *Linear Rail Manual Clamp Fixture*) |
+| **Fixed VESA Wall Mount Bracket** (75x75 / 100x100) | A flat VESA plate that screws directly to the front face of the moving slider block. | £5.00 | Screwfix, Toolstation, or Amazon |
+| **Timber Backing Spine** (Approx. 70cm x 12cm) | A piece of thick 18mm plywood, MDF, or timber to act as the main structural spine. | Free – £5.00 | B&Q, Wickes (or scrap pile) |
+| **Desk Mounting Hardware** (2x G-Clamps or Heavy Wood Screws) | Anchor points to rigidly lock the wooden spine to your desk frame. | £6.00 | Toolstation or Screwfix |
+| **TOTAL BUDGET** | | **~£37.99 – £49.99** | |
+
+---
+
+## 📐 Structural Layout
+    +-------------------------------------------------------------+
+
+    |                           [ WALL ]                          |
+    +-------------------------------------------------------------+
+                                   |
+                                   | (Gap behind desk)
+                                   v
+    +-------------------------------------------------------------+
+
+    |                       [ Wooden Spine ]                      |
+    |          (Clamped or screwed tightly to desk frame)         |
+    +-------------------------------------------------------------+
+                                   |
+                                   | (Screwed down the center)
+                                   v
+    +-------------------------------------------------------------+
+
+    |                     [ MGN12 Steel Rail ]                    |
+    +-------------------------------------------------------------+
+                                   |
+                                   | (Slides vertically)
+                                   v
+    +-------------------------------------------------------------+
+
+    |             [ Slide Block + Thumb Screw Clamp ]             |
+    +-------------------------------------------------------------+
+                                   |
+                                   | (Bolted to carriage block)
+                                   v
+    +-------------------------------------------------------------+
+
+    |                      [ Fixed VESA Plate ]                   |
+    +-------------------------------------------------------------+
+                                   |
+                                   | (Attached via standard screws)
+                                   v
+    +-------------------------------------------------------------+
+
+    |                     [ 27" Monitor Panel ]                   |
+    +-------------------------------------------------------------+
+                                   |
+                                   v
+    +-------------------------------------------------------------+
+
+    |                         [ DESK TOP ]                        |
+    +-------------------------------------------------------------+
+
+---
+
+## 🪚 Step-by-Step Assembly Method
+
+### Step 1: Anchor the Wooden Spine to the Desk
+* This system **cannot be free-standing**. When you adjust the monitor, you need a rigid frame.
+* Place your 18mm thick wooden spine vertically behind the back edge of your desk. 
+* Securely clamp it to the desk frame using two heavy-duty **G-Clamps**, or screw it directly into the rear structural wood/metal beams of your desk.
+
+### Step 2: Install the Steel Linear Rail
+* Place your **MGN12 Steel Rail** perfectly vertical right down the center face of your anchored wooden spine.
+* Use standard wood screws to secure the steel rail down tightly through the pre-drilled factory holes running along its track. 
+
+### Step 3: Attach the Slider & VESA Plate
+* Carefully slide the **MGN12H block** and its accompanying **Manual Locking Clamp** onto the steel rail from either the top or bottom. 
+* Bolt your basic flat VESA plate straight onto the front face of the slider carriage block using small machine screws. 
+* *Test the mechanism:* Turn the manual thumb screw clockwise. It should press its internal brass stopper cleanly against the steel rail, locking the carriage completely solid.
+
+### Step 4: Mount the Monitor & Adjust
+* Remove your 27-inch monitor from its original desktop stand and hook its VESA holes onto the newly installed slider VESA plate.
+* **To hide the monitor:** Reach behind the screen, loosen the thumb screw, drop the monitor down below your desk eye line, and nip the screw tight.
+* **To use the monitor:** Loosen the screw, lift the screen up to your exact ergonomic eye line with your hands (a modern 27" panel averages 4kg, making it very light to lift), and lock the screw tight again.
